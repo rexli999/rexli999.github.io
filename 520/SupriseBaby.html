@@ -51,14 +51,14 @@
 										<div id="words">
 											<div id="messages">
 												小鸡蛋, <br />
-												<p>你看，算下来我们在一起已经有</p>
-												<div id="elapseClock"></div>
+												<p>  你看， 算下来我们在一起已经有</p>
+												<p id="elapseClock"></p>
 												<p align="right">"我饿咯"的时刻...</p>
 
 											</div>
 											<div id="loveu">
 												Love u<br/>
-												<div class="signature">- 季欣</div>
+												<p class="signature">- 季欣</p>
 											</div>
 										</div>
 									</div>
@@ -67,7 +67,7 @@
 							</div>
 							<script type="text/javascript">
 								var offsetX = $("#loveHeart").width() / 1.9;
-								var offsetY = $("#loveHeart").height() / 2 + 35;
+								var offsetY = $("#loveHeart").height() / 2 - 8;
 								var together = new Date();
 								together.setFullYear(2019, 3, 9);
 								together.setHours(20);
@@ -87,12 +87,12 @@
 								} else {
 									setTimeout(function () {
 										startHeartAnimation();
-									}, 5000);
+									}, 10);
 
 									timeElapse(together);
 									setInterval(function () {
 										timeElapse(together);
-									}, 500);
+									}, 50);
 
 									adjustCodePosition();
 									$("#code").typewriter();
