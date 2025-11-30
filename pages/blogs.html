@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogs - Jixin (Jay) Li</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Merriweather:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <style>
+        /* [SAME CSS AS INDEX.HTML] */
+        :root { --sidebar-width: 320px; --primary-color: #252a34; --link-color: #0654ba; --text-color: #333; --bg-color: #fff; --nav-bg: #fff; --border-color: #eee; }
+        * { box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", Arial, sans-serif; color: var(--text-color); background-color: var(--bg-color); margin: 0; line-height: 1.6; font-size: 16px; }
+        a { color: var(--link-color); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        h1, h2 { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-weight: 700; color: #000; }
+        h1 { font-size: 2rem; margin-top: 0; }
+        h2 { font-size: 1.5rem; border-bottom: 1px solid var(--border-color); padding-bottom: 0.5em; margin-top: 0; }
+        
+        .masthead { border-bottom: 1px solid var(--border-color); background-color: var(--nav-bg); width: 100%; position: relative; z-index: 10; }
+        .masthead-inner { max-width: 1280px; margin: 0 auto; padding: 1.5rem 2rem; display: flex; justify-content: flex-start; align-items: center; }
+        .nav-links { display: flex; gap: 25px; list-style: none; margin: 0; padding: 0; }
+        .nav-links a { color: #555; font-weight: 700; font-size: 1rem; }
+        .nav-links a:hover, .nav-links a.active { color: #000; text-decoration: none; }
+
+        .wrapper { display: flex; flex-wrap: wrap; max-width: 1280px; margin: 0 auto; padding: 2rem; }
+        .sidebar { width: 100%; margin-bottom: 2rem; padding-right: 0; text-align: center; }
+        .main-content { width: 100%; }
+        
+        .profile-card { position: sticky; top: 2rem; }
+        .avatar { width: 220px; height: 220px; border-radius: 50%; object-fit: cover; margin-bottom: 1rem; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        .profile-name { font-size: 1.6rem; font-weight: 700; margin: 0.5rem 0 0.2rem 0; }
+        .institution { font-weight: 500; color: #333; margin-bottom: 1rem; display: block; }
+        .profile-bio { font-size: 0.95rem; color: #666; margin-bottom: 1.5rem; line-height: 1.5; text-align: center; }
+        .interest-tag { display: inline-block; background: #f4f4f4; padding: 2px 8px; border-radius: 4px; font-size: 0.85rem; margin: 2px; color: #555; border: 1px solid #e0e0e0; }
+        
+        .social-links { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; align-items: center; gap: 10px; margin-bottom: 2rem; }
+        .social-links li { width: 100%; }
+        .social-links a, .social-item { color: #555; font-size: 1rem; display: flex; align-items: center; justify-content: center; gap: 12px; }
+        .social-links a:hover { color: var(--link-color); text-decoration: underline; }
+        .icon-loc { color: var(--link-color); } .icon-scholar { color: #4285F4; } .icon-github { color: #24292e; } .icon-linkedin { color: #0077b5; } .icon-email { color: #2c3e50; }
+
+        /* Blog Grid */
+        .blog-grid { display: grid; grid-template-columns: 1fr; gap: 20px; }
+        .blog-card { border: 1px solid #eee; border-radius: 8px; padding: 1.5rem; transition: box-shadow 0.2s; background: #fff; }
+        .blog-card:hover { box-shadow: 0 5px 15px rgba(0,0,0,0.08); border-color: #ddd; }
+        .blog-date { font-size: 0.8rem; color: #888; margin-bottom: 0.5rem; display: block; }
+        .blog-title { font-size: 1.1rem; font-weight: 700; margin: 0 0 0.5rem 0; color: #252a34; }
+        .blog-snippet { font-size: 0.9rem; color: #555; line-height: 1.5; }
+
+        @media (min-width: 850px) {
+            .sidebar { width: var(--sidebar-width); padding-right: 3rem; text-align: left; }
+            .profile-bio { text-align: left; }
+            .main-content { width: calc(100% - var(--sidebar-width)); }
+            .social-links { align-items: flex-start; }
+            .social-links a, .social-item { justify-content: flex-start; }
+            .blog-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+    </style>
+</head>
+<body>
+    <div class="masthead">
+        <div class="masthead-inner">
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="publications.html">Publications</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="blogs.html" class="active">Blogs</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="wrapper">
+        <aside class="sidebar">
+            <div class="profile-card">
+                <img src="../assets/images/portrait_circle2.png" alt="Jixin Li" class="avatar">
+                <h2 class="profile-name" style="border:none; padding:0; margin-top:0;">Jixin (Jay) Li</h2>
+                <span class="institution">PhD Candidate<br>Northeastern University</span>
+                <div class="profile-bio">
+                    <strong>Interests:</strong><br>
+                    <span class="interest-tag">Ecological Momentary Assessment (EMA)</span>
+                    <span class="interest-tag">Large Language Models (LLM)</span>
+                    <span class="interest-tag">Causal Inference</span>
+                    <span class="interest-tag">Mobile Sensing</span>
+                </div>
+                <ul class="social-links">
+                    <li><div class="social-item"><i class="fas fa-map-marker-alt icon-loc" style="width: 20px; text-align: center;"></i> <span>Boston, MA</span></div></li>
+                    <li><a href="mailto:li.jix@northeastern.edu"><i class="fas fa-envelope icon-email" style="width: 20px; text-align: center;"></i> Email</a></li>
+                    <li><a href="https://scholar.google.com/citations?user=9_JWYG0AAAAJ&hl=en"><i class="fas fa-graduation-cap icon-scholar" style="width: 20px; text-align: center;"></i> Google Scholar</a></li>
+                    <li><a href="https://github.com/rexli999"><i class="fab fa-github icon-github" style="width: 20px; text-align: center;"></i> GitHub</a></li>
+                    <li><a href="https://www.linkedin.com/in/jixin-li-432b7a123/"><i class="fab fa-linkedin icon-linkedin" style="width: 20px; text-align: center;"></i> LinkedIn</a></li>
+                </ul>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <section id="blogs">
+                <h1 style="margin-top:0;">Blogs</h1>
+                <div class="blog-grid">
+                    <a href="#" class="blog-card" style="text-decoration:none;">
+                        <span class="blog-date">Nov 15, 2024</span>
+                        <h3 class="blog-title">Wearable sensing insights</h3>
+                        <p class="blog-snippet">Exploration of the latest sensors in commercial smartwatches and what they mean for the future of continuous health monitoring...</p>
+                    </a>
+                    <a href="#" class="blog-card" style="text-decoration:none;">
+                        <span class="blog-date">Oct 02, 2024</span>
+                        <h3 class="blog-title">Meta-thoughts about research/human-centered AI</h3>
+                        <p class="blog-snippet">Reflecting on the role of AI in HCI: Are we building tools that empower users, or systems that replace human agency?</p>
+                    </a>
+                    <a href="#" class="blog-card" style="text-decoration:none;">
+                        <span class="blog-date">Aug 10, 2024</span>
+                        <h3 class="blog-title">Career & interviewing reflections</h3>
+                        <p class="blog-snippet">Lessons learned from my recent academic and industry job search. How to pitch your PhD research to different audiences.</p>
+                    </a>
+                    <a href="#" class="blog-card" style="text-decoration:none;">
+                        <span class="blog-date">July 22, 2024</span>
+                        <h3 class="blog-title">Personal trips & wilderness planning</h3>
+                        <p class="blog-snippet">A guide to disconnecting. My recent trip to the White Mountains and how I prepare for multi-day hikes without signal.</p>
+                    </a>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

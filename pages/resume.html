@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume - Jixin (Jay) Li</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Merriweather:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <style>
+        /* [SAME CSS AS INDEX.HTML] */
+        :root { --sidebar-width: 320px; --primary-color: #252a34; --link-color: #0654ba; --text-color: #333; --bg-color: #fff; --nav-bg: #fff; --border-color: #eee; }
+        * { box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", Arial, sans-serif; color: var(--text-color); background-color: var(--bg-color); margin: 0; line-height: 1.6; font-size: 16px; }
+        a { color: var(--link-color); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        h1, h2 { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-weight: 700; color: #000; }
+        h1 { font-size: 2rem; margin-top: 0; }
+        h2 { font-size: 1.5rem; border-bottom: 1px solid var(--border-color); padding-bottom: 0.5em; margin-top: 2em; }
+        
+        .masthead { border-bottom: 1px solid var(--border-color); background-color: var(--nav-bg); width: 100%; position: relative; z-index: 10; }
+        .masthead-inner { max-width: 1280px; margin: 0 auto; padding: 1.5rem 2rem; display: flex; justify-content: flex-start; align-items: center; }
+        .nav-links { display: flex; gap: 25px; list-style: none; margin: 0; padding: 0; }
+        .nav-links a { color: #555; font-weight: 700; font-size: 1rem; }
+        .nav-links a:hover, .nav-links a.active { color: #000; text-decoration: none; }
+
+        .wrapper { display: flex; flex-wrap: wrap; max-width: 1280px; margin: 0 auto; padding: 2rem; }
+        .sidebar { width: 100%; margin-bottom: 2rem; padding-right: 0; text-align: center; }
+        .main-content { width: 100%; }
+        
+        .profile-card { position: sticky; top: 2rem; }
+        .avatar { width: 220px; height: 220px; border-radius: 50%; object-fit: cover; margin-bottom: 1rem; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        .profile-name { font-size: 1.6rem; font-weight: 700; margin: 0.5rem 0 0.2rem 0; }
+        .institution { font-weight: 500; color: #333; margin-bottom: 1rem; display: block; }
+        .profile-bio { font-size: 0.95rem; color: #666; margin-bottom: 1.5rem; line-height: 1.5; text-align: center; }
+        .interest-tag { display: inline-block; background: #f4f4f4; padding: 2px 8px; border-radius: 4px; font-size: 0.85rem; margin: 2px; color: #555; border: 1px solid #e0e0e0; }
+        
+        .social-links { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; align-items: center; gap: 10px; margin-bottom: 2rem; }
+        .social-links li { width: 100%; }
+        .social-links a, .social-item { color: #555; font-size: 1rem; display: flex; align-items: center; justify-content: center; gap: 12px; }
+        .social-links a:hover { color: var(--link-color); text-decoration: underline; }
+        .icon-loc { color: var(--link-color); } .icon-scholar { color: #4285F4; } .icon-github { color: #24292e; } .icon-linkedin { color: #0077b5; } .icon-email { color: #2c3e50; }
+
+        @media (min-width: 850px) {
+            .sidebar { width: var(--sidebar-width); padding-right: 3rem; text-align: left; }
+            .profile-bio { text-align: left; }
+            .main-content { width: calc(100% - var(--sidebar-width)); }
+            .social-links { align-items: flex-start; }
+            .social-links a, .social-item { justify-content: flex-start; }
+        }
+
+        /* --- Resume SPECIFIC STYLES --- */
+        .cv-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;}
+        .cv-section-title { font-size: 1.4rem; border-bottom: 1px solid #eee; padding-bottom: 5px; margin-top: 2rem; margin-bottom: 1rem; color: #222; }
+        
+        .cv-item { display: flex; flex-direction: column; margin-bottom: 1.2rem; }
+        .cv-row { display: flex; justify-content: space-between; align-items: baseline; }
+        .cv-main-text { font-weight: 700; color: #333; font-size: 1.05rem; }
+        .cv-sub-text { color: #555; font-style: italic; }
+        .cv-date { color: #888; font-size: 0.9rem; white-space: nowrap; margin-left: 15px; }
+        .cv-location { color: #888; font-size: 0.9rem; white-space: nowrap; margin-left: 15px; }
+        .cv-desc { margin-top: 5px; color: #666; font-size: 0.95rem; }
+        
+        .btn-download { display: inline-flex; align-items: center; gap: 8px; padding: 8px 16px; background-color: var(--link-color); color: #fff; border-radius: 4px; font-weight: 600; font-size: 0.9rem; transition: background 0.2s; }
+        .btn-download:hover { background-color: #054296; text-decoration: none; }
+
+        @media (max-width: 600px) {
+            .cv-row { flex-direction: column; }
+            .cv-date { margin-left: 0; margin-top: 2px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="masthead">
+        <div class="masthead-inner">
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="publications.html">Publications</a></li>
+                <li><a href="resume.html" class="active">Resume</a></li>
+                <li><a href="blogs.html">Blogs</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="wrapper">
+        <aside class="sidebar">
+            <div class="profile-card">
+                <img src="../assets/images/portrait_circle2.png" alt="Jixin Li" class="avatar">
+                <h2 class="profile-name" style="border:none; padding:0; margin-top:0;">Jixin (Jay) Li</h2>
+                <span class="institution">PhD Candidate<br>Northeastern University</span>
+                <div class="profile-bio">
+                    <strong>Interests:</strong><br>
+                    <span class="interest-tag">Ecological Momentary Assessment (EMA)</span>
+                    <span class="interest-tag">Large Language Models (LLM)</span>
+                    <span class="interest-tag">Causal Inference</span>
+                    <span class="interest-tag">Mobile Sensing</span>
+                </div>
+                <ul class="social-links">
+                    <li><div class="social-item"><i class="fas fa-map-marker-alt icon-loc" style="width: 20px; text-align: center;"></i> <span>Boston, MA</span></div></li>
+                    <li><a href="mailto:li.jix@northeastern.edu"><i class="fas fa-envelope icon-email" style="width: 20px; text-align: center;"></i> Email</a></li>
+                    <li><a href="https://scholar.google.com/citations?user=9_JWYG0AAAAJ&hl=en"><i class="fas fa-graduation-cap icon-scholar" style="width: 20px; text-align: center;"></i> Google Scholar</a></li>
+                    <li><a href="https://github.com/rexli999"><i class="fab fa-github icon-github" style="width: 20px; text-align: center;"></i> GitHub</a></li>
+                    <li><a href="https://www.linkedin.com/in/jixin-li-432b7a123/"><i class="fab fa-linkedin icon-linkedin" style="width: 20px; text-align: center;"></i> LinkedIn</a></li>
+                </ul>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <div class="cv-header">
+                <h1 style="margin:0;">Resume</h1>
+                <a href="../assets/docs/CV.pdf" class="btn-download"><i class="fas fa-download"></i> Download PDF</a>
+            </div>
+
+            <h3 class="cv-section-title">Education</h3>
+            <div class="cv-item">
+                <div class="cv-row">
+                    <span class="cv-main-text">Northeastern University</span>
+                    <span class="cv-date">2019 - Present</span>
+                </div>
+                <div class="cv-sub-text">PhD in Personal Health Informatics</div>
+                <div class="cv-desc">Advisor: Prof. Stephen Intille</div>
+            </div>
+            <div class="cv-item">
+                <div class="cv-row">
+                    <span class="cv-main-text">Columbia University</span>
+                    <span class="cv-date">2016 - 2018</span>
+                </div>
+                <div class="cv-sub-text">M.A. in Statistics</div>
+            </div>
+            <div class="cv-item">
+                <div class="cv-row">
+                    <span class="cv-main-text">University of Michigan</span>
+                    <span class="cv-date">2012 - 2014</span>
+                </div>
+                <div class="cv-sub-text">B.A. in Psychology</div>
+            </div>
+
+            <h3 class="cv-section-title">Experience</h3>
+            <div class="cv-item">
+                <div class="cv-row" style="display: flex; justify-content: space-between; align-items: flex-start;">
+                    
+                    <div style="display: flex; flex-direction: column;">
+                        <span class="cv-main-text">Graduate Researcher and Teaching Assistant</span>
+                        <span class="cv-sub-text">mHealth Research Group, Northeastern University</span>
+                    </div>
+            
+                    <div style="text-align: right;"> 
+                        <div class="cv-date">2019 - Present</div>
+                        <div class="cv-location">Boston, MA</div> 
+                    </div>
+                </div>
+            </div>
+
+            <div class="cv-item">
+                <div class="cv-row" style="display: flex; justify-content: space-between; align-items: flex-start;">
+                    
+                    <div style="display: flex; flex-direction: column;">
+                        <span class="cv-main-text">Data Scientist</span>
+                        <span class="cv-sub-text">Learnable AI</span>
+                    </div>
+            
+                    <div style="text-align: right;"> 
+                        <div class="cv-date">2017 - 2019</div>
+                        <div class="cv-location">Boston, MA</div> 
+                    </div>
+                </div>
+            </div>
+
+            <div class="cv-item">
+                <div class="cv-row" style="display: flex; justify-content: space-between; align-items: flex-start;">
+                    
+                    <div style="display: flex; flex-direction: column;">
+                        <span class="cv-main-text">Survey analyst</span>
+                        <span class="cv-sub-text">Asia EAP</span>
+                    </div>
+            
+                    <div style="text-align: right;"> 
+                        <div class="cv-date">2014 - 2015</div>
+                        <div class="cv-location">Shanghai, China</div> 
+                    </div>
+                </div>
+            </div>
+
+            <h3 class="cv-section-title">Selected Awards</h3>
+            <div class="cv-item">
+                <div class="cv-row">
+                    <span class="cv-main-text">Distinguished Paper Award</span>
+                    <span class="cv-date">2023</span>
+                </div>
+                <div class="cv-sub-text">ACM UbiComp / ISWC 2023</div>
+            </div>
+
+            <h3 class="cv-section-title">Skills</h3>
+            <div class="cv-item">
+                <div class="cv-desc">
+                    <strong>Programming Languages:</strong> Python, R, Java, SQL<br>
+
+                    <strong>Machine Learning Frameworks:</strong> PyTorch, Scikit-learn<br>
+                    
+                    <strong>Software:</strong> RStudio, Android Studio, SPSS, Visual Studio Code, Cursor, Qualtrics, Figma<br>
+                    
+                    <strong>Statistical modeling Skills:</strong> Univariate and multivariate statistics, multilevel modeling,
+                    supervised and unsupervised machine learning, deep learning, time-series analysis,
+                    natural language processing, Bayesian statistics, uncertainty-aware decision making<br>
+                    
+                    <strong>UX Research Methods:</strong> Survey design, experience sampling (diary studies),
+                    mobile sensing, experimental design, interview, focus group, data visualization, scientific writing, and communication<br>
+
+                    <strong>AI tools:</strong> OpenAI API, LangChain, Hugging Face, Gemini, Claude, NotebookLM
+                    
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
+

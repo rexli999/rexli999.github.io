@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publications - Jixin (Jay) Li</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Merriweather:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <style>
+        /* [SAME CSS AS INDEX.HTML] */
+        :root { --sidebar-width: 320px; --primary-color: #252a34; --link-color: #0654ba; --text-color: #333; --bg-color: #fff; --nav-bg: #fff; --border-color: #eee; }
+        * { box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", Arial, sans-serif; color: var(--text-color); background-color: var(--bg-color); margin: 0; line-height: 1.6; font-size: 16px; }
+        a { color: var(--link-color); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        h1, h2 { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-weight: 700; color: #000; }
+        h1 { font-size: 2rem; margin-top: 0; }
+        h2 { font-size: 1.5rem; border-bottom: 1px solid var(--border-color); padding-bottom: 0.5em; margin-top: 0; }
+        
+        .masthead { border-bottom: 1px solid var(--border-color); background-color: var(--nav-bg); width: 100%; position: relative; z-index: 10; }
+        .masthead-inner { max-width: 1280px; margin: 0 auto; padding: 1.5rem 2rem; display: flex; justify-content: flex-start; align-items: center; }
+        .nav-links { display: flex; gap: 25px; list-style: none; margin: 0; padding: 0; }
+        .nav-links a { color: #555; font-weight: 700; font-size: 1rem; }
+        .nav-links a:hover, .nav-links a.active { color: #000; text-decoration: none; }
+
+        .wrapper { display: flex; flex-wrap: wrap; max-width: 1280px; margin: 0 auto; padding: 2rem; }
+        .sidebar { width: 100%; margin-bottom: 2rem; padding-right: 0; text-align: center; }
+        .main-content { width: 100%; }
+        
+        .profile-card { position: sticky; top: 2rem; }
+        .avatar { width: 220px; height: 220px; border-radius: 50%; object-fit: cover; margin-bottom: 1rem; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        .profile-name { font-size: 1.6rem; font-weight: 700; margin: 0.5rem 0 0.2rem 0; }
+        .institution { font-weight: 500; color: #333; margin-bottom: 1rem; display: block; }
+        .profile-bio { font-size: 0.95rem; color: #666; margin-bottom: 1.5rem; line-height: 1.5; text-align: center; }
+        .interest-tag { display: inline-block; background: #f4f4f4; padding: 2px 8px; border-radius: 4px; font-size: 0.85rem; margin: 2px; color: #555; border: 1px solid #e0e0e0; }
+        
+        .social-links { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; align-items: center; gap: 10px; margin-bottom: 2rem; }
+        .social-links li { width: 100%; }
+        .social-links a, .social-item { color: #555; font-size: 1rem; display: flex; align-items: center; justify-content: center; gap: 12px; }
+        .social-links a:hover { color: var(--link-color); text-decoration: underline; }
+        .icon-loc { color: var(--link-color); } .icon-scholar { color: #4285F4; } .icon-github { color: #24292e; } .icon-linkedin { color: #0077b5; } .icon-email { color: #2c3e50; }
+
+        /* Publication Specifics */
+        .pub-year-header { font-size: 1.2rem; color: #777; border-bottom: 1px solid #eee; margin-bottom: 1rem; margin-top: 2rem; padding-bottom: 0.5rem; }
+        .publication-list { list-style: none; padding: 0; }
+        .publication-item { margin-bottom: 1.5rem; display: flex; gap: 1rem; }
+        .pub-details { flex: 1; }
+        .pub-title { font-weight: 700; color: #000; font-size: 1.05rem; display: block; margin-bottom: 4px; }
+        .pub-authors { font-size: 0.95rem; color: #555; margin-bottom: 4px; }
+        .pub-venue { font-style: italic; color: #666; font-size: 0.9rem; }
+        .pub-links { margin-top: 5px; font-size: 0.85rem; }
+        .pub-links a { margin-right: 10px; font-weight: 600;}
+
+        @media (min-width: 850px) {
+            .sidebar { width: var(--sidebar-width); padding-right: 3rem; text-align: left; }
+            .profile-bio { text-align: left; }
+            .main-content { width: calc(100% - var(--sidebar-width)); }
+            .social-links { align-items: flex-start; }
+            .social-links a, .social-item { justify-content: flex-start; }
+        }
+    </style>
+</head>
+<body>
+    <div class="masthead">
+        <div class="masthead-inner">
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="publications.html" class="active">Publications</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="blogs.html">Blogs</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="wrapper">
+        <aside class="sidebar">
+            <div class="profile-card">
+                <img src="../assets/images/portrait_circle2.png" alt="Jixin Li" class="avatar">
+                <h2 class="profile-name" style="border:none; padding:0; margin-top:0;">Jixin (Jay) Li</h2>
+                <span class="institution">PhD Candidate<br>Northeastern University</span>
+                <div class="profile-bio">
+                    <strong>Interests:</strong><br>
+                    <span class="interest-tag">Ecological Momentary Assessment (EMA)</span>
+                    <span class="interest-tag">Large Language Models (LLM)</span>
+                    <span class="interest-tag">Causal Inference</span>
+                    <span class="interest-tag">Mobile Sensing</span>
+                </div>
+                <ul class="social-links">
+                    <li><div class="social-item"><i class="fas fa-map-marker-alt icon-loc" style="width: 20px; text-align: center;"></i> <span>Boston, MA</span></div></li>
+                    <li><a href="mailto:li.jix@northeastern.edu"><i class="fas fa-envelope icon-email" style="width: 20px; text-align: center;"></i> Email</a></li>
+                    <li><a href="https://scholar.google.com/citations?user=9_JWYG0AAAAJ&hl=en"><i class="fas fa-graduation-cap icon-scholar" style="width: 20px; text-align: center;"></i> Google Scholar</a></li>
+                    <li><a href="https://github.com/rexli999"><i class="fab fa-github icon-github" style="width: 20px; text-align: center;"></i> GitHub</a></li>
+                    <li><a href="https://www.linkedin.com/in/jixin-li-432b7a123/"><i class="fab fa-linkedin icon-linkedin" style="width: 20px; text-align: center;"></i> LinkedIn</a></li>
+                </ul>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <section id="publications">
+                <h1 style="margin-top:0;">Publications</h1>
+                <p><strong>Selected peer-reviewed journal and conference publications. <span style="color:#d32f2f; font-weight:bold; font-size:0.8rem; margin-left:5px;">{ * }</span> indicates equal contributions by the authors.</strong></p>
+                <h3 class="pub-year-header">2025</h3>
+                <ul class="publication-list">
+                    <li class="publication-item">
+                        <div class="pub-details">
+                            <span class="pub-title">Longitudinal User Engagement with Microinteraction Ecological Momentary Assessment (μEMA)</span>
+                            <div class="pub-authors">Aditya Ponnada, Shirlene Wang, <strong>Jixin Li</strong>, Wei-Lin Wang, Genevieve Dunton, Donald Hedeker, and Stephen Intille</div>
+                            <div class="pub-venue">Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies (IMWUT)</div>
+                            <div class="pub-links">
+                                <a href="https://dl.acm.org/doi/abs/10.1145/3749541"><i class="fas fa-link"></i> DOI</a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="publication-item">
+                        <div class="pub-details">
+                            <span class="pub-title">Within- and Between-Individual Compliance in Mobile Health: Joint Modeling Approach to Nonrandom Missingness in an Intensive Longitudinal Observational Study</span>
+                            <div class="pub-authors">Young Won Cho, Sy-Miin Chow, <strong>Jixin Li</strong>, Wei-Lin Wang, Shirlene Wang, Linying Ji, Vernon M Chinchilli, Stephen S Intille, Genevieve Fridlund Dunton</div>
+                            <div class="pub-venue">JMIR mHealth and uHealth</div>
+                            <div class="pub-links">
+                                <a href="https://mhealth.jmir.org/2025/1/e65350"><i class="fas fa-link"></i> DOI</a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="publication-item">
+                        <div class="pub-details">
+                            <span class="pub-title">Understanding Longitudinal Ecological Momentary Assessment Completion: Results From 12 Months of Burst Sampling in the TIME Study</span>
+                            <div class="pub-authors">Tyler Prochnow, Wei-Lin Wang, Shirlene Wang, <strong>Jixin Li</strong>, Alexander Rothman, Stephen Intille, Donald Hedeker, Genevieve Dunton</div>
+                            <div class="pub-venue">JMIR mHealth and uHealth</div>
+                            <div class="pub-links">
+                                <a href="https://mhealth.jmir.org/2025/1/e67117/"><i class="fas fa-link"></i> DOI</a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="publication-item">
+                        <div class="pub-details">
+                            <span class="pub-title">Prevalence of Physical Activity Maintenance Across a 12-Month Study: Comparison of Accelerometer Indicators</span>
+                            <div class="pub-authors">Genevieve F Dunton, Wei-Lin Wang, <strong>Jixin Li</strong>, Shirlene Wang, Donald Hedeker, Stephen S Intille, Alexander J Rothman</div>
+                            <div class="pub-venue">Journal of Physical Activity and Health</div>
+                            <div class="pub-links">
+                                <a href="https://journals.humankinetics.com/view/journals/jpah/22/10/article-p1256.xml"><i class="fas fa-link"></i> DOI</a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="publication-item">
+                        <div class="pub-details">
+                            <span class="pub-title">Exploring person-centred sleep and rest–activity cycle dynamics over 6 months</span>
+                            <div class="pub-authors">Rachel Crosley‐Lyons, <strong>Jixin Li</strong>, Wei‐Lin Wang, Shirlene D Wang, Jimi Huh, Dayoung Bae, Stephen S Intille, Genevieve F Dunton</div>
+                            <div class="pub-venue">Journal of Sleep Research</div>
+                            <div class="pub-links">
+                                <a href="https://onlinelibrary.wiley.com/doi/full/10.1111/jsr.14471"><i class="fas fa-link"></i> DOI</a>
+                            </div>
+                        </div>
+                    </li>
+                    
+                </ul>
+
+                <h3 class="pub-year-header">2024</h3>
+               
+                <ul class="publication-list">
+                    <li class="publication-item">
+                        <div class="pub-details">
+                            <span class="pub-title">Ask Less, Learn More: Adapting Ecological Momentary Assessment Survey Length by Modeling Question-Answer Information Gain</span>
+                            <div class="pub-authors"><strong>Jixin Li</strong>, Aditya Ponnada, Wei-Lin Wang, Genevieve Dunton, Stephen Intille</div>
+                            <div class="pub-venue">Proc. ACM Interact. Mob. Wearable Ubiquitous Technol. (PACM IMWUT)</div>
+                            <div class="pub-links">
+                                <a href="https://dl.acm.org/doi/abs/10.1145/3699735"><i class="fas fa-link"></i> DOI</a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="publication-item">
+                        <div class="pub-details">
+                            <span class="pub-title">Collecting Self-reported Physical Activity and Posture Data Using Audio-based Ecological Momentary Assessment</span>
+                            <div class="pub-authors">Ha Le, Rithika Lakshminarayanan, <strong>Jixin Li</strong>, Varun Mishra, Stephen Intille</div>
+                            <div class="pub-venue">Proc. ACM Interact. Mob. Wearable Ubiquitous Technol. (PACM IMWUT)</div>
+                            <div class="pub-links">
+                                <a href="https://dl.acm.org/doi/abs/10.1145/3678584"><i class="fas fa-link"></i> DOI</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+
+
+
+                <h3 class="pub-year-header">2022</h3>
+                <ul class="publication-list">
+                    <li class="publication-item">
+                        <div class="pub-details">
+                            <span class="pub-title">Contextual Biases in Micro-Interaction Ecological Momentary Assessment (μEMA)</span>
+                            <div class="pub-authors">Aditya Ponnada*, <strong>Jixin Li*</strong>, Shirlene Wang, Wei-Lin Wang, Bridgette Do, Genevieve F. Dunton, and Stephen S. Intille.</div>
+                            <div class="pub-venue">Proc. ACM Interact. Mob. Wearable Ubiquitous Technol. (PACM IMWUT) <span style="color:#d32f2f; font-weight:bold; font-size:0.8rem; margin-left:5px;">(Distinguished Paper Award)</span></div>
+                            <div class="pub-links">
+                                <a href="https://dl.acm.org/doi/10.1145/3517259"><i class="fas fa-link"></i> DOI</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
