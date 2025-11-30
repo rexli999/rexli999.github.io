@@ -38,7 +38,7 @@
         .social-links li { width: 100%; }
         .social-links a, .social-item { color: #555; font-size: 1rem; display: flex; align-items: center; justify-content: center; gap: 12px; }
         .social-links a:hover { color: var(--link-color); text-decoration: underline; }
-        .icon-loc { color: var(--link-color); } .icon-scholar { color: #4285F4; } .icon-github { color: #24292e; } .icon-linkedin { color: #0077b5; } .icon-email { color: #2c3e50; }
+        .icon-loc { color: var(--link-color); } .icon-scholar { color: #4285F4; } .icon-github { color: #24292e; } .icon-linkedin { color: #0077b5; } .icon-email { color: #2c3e50; } .icon-resume { color: #000; } .icon-cv { color: #000; }
 
         @media (min-width: 850px) {
             .sidebar { width: var(--sidebar-width); padding-right: 3rem; text-align: left; }
@@ -101,6 +101,8 @@
                     <li><a href="https://scholar.google.com/citations?user=9_JWYG0AAAAJ&hl=en"><i class="fas fa-graduation-cap icon-scholar" style="width: 20px; text-align: center;"></i> Google Scholar</a></li>
                     <li><a href="https://github.com/rexli999"><i class="fab fa-github icon-github" style="width: 20px; text-align: center;"></i> GitHub</a></li>
                     <li><a href="https://www.linkedin.com/in/jixin-li-432b7a123/"><i class="fab fa-linkedin icon-linkedin" style="width: 20px; text-align: center;"></i> LinkedIn</a></li>
+                    <li><a href="resume.html"><i class="fas fa-file-alt icon-resume" style="width: 20px; text-align: center;"></i> Resume</a></li>
+                    <li><a href="../assets/docs/CV.pdf"><i class="fas fa-file-pdf icon-cv" style="width: 20px; text-align: center;"></i> CV</a></li>
                 </ul>
             </div>
         </aside>
@@ -108,7 +110,7 @@
         <main class="main-content">
             <div class="cv-header">
                 <h1 style="margin:0;">Resume</h1>
-                <a href="../assets/docs/CV.pdf" class="btn-download"><i class="fas fa-download"></i> Download PDF</a>
+                <a href="../assets/docs/Resume_Jixin_Li.pdf" class="btn-download"><i class="fas fa-download"></i> Download PDF</a>
             </div>
 
             <h3 class="cv-section-title">Education</h3>
@@ -143,6 +145,7 @@
                         <span class="cv-main-text">Graduate Researcher and Teaching Assistant</span>
                         <span class="cv-sub-text">Group: <a href= "https://www.mhealthgroup.org/">mHealth Research Group</a> led by <a href= "https://ccis.northeastern.edu/home/intille/">Prof. Stephen Intille</a></span>
                         <span class="cv-sub-desc">Dept: Khoury College of Computer Science and Bouve College of Health Sciences</span>
+                        <span class="cv-sub-desc">Univ: Northeastern University</span>
                     </div>
             
                     <div style="text-align: right;"> 
@@ -157,7 +160,7 @@
                     
                     <div style="display: flex; flex-direction: column;">
                         <span class="cv-main-text">Data Scientist</span>
-                        <span class="cv-sub-text">Learnable AI</span>
+                        <span class="cv-sub-text">Company: Learnable AI</span>
                     </div>
             
                     <div style="text-align: right;"> 
@@ -172,32 +175,13 @@
                     
                     <div style="display: flex; flex-direction: column;">
                         <span class="cv-main-text">Survey analyst</span>
-                        <span class="cv-sub-text">Asia EAP</span>
+                        <span class="cv-sub-text">Company: Asia EAP</span>
                     </div>
             
                     <div style="text-align: right;"> 
                         <div class="cv-date">2014 - 2015</div>
                         <div class="cv-location">Shanghai, China</div> 
                     </div>
-                </div>
-            </div>
-
-            <h3 class="cv-section-title">Selected Awards</h3>
-            <div class="cv-item">
-                <div class="cv-row">
-                    <span class="cv-main-text">Distinguished Paper Award</span>
-                    <span class="cv-date">2023</span>
-                </div>
-                <div class="cv-sub-text">ACM UbiComp / ISWC 2023</div>
-            </div>
-
-            <h3 class="cv-section-title">Open-source contribution</h3>
-            <div class="cv-item">
-                <div class="cv-desc">
-                    <ul style="margin: 0; padding-left: 20px; color: #666;">
-                        <li><strong><a href= "https://reach-lab.github.io/MixWildGUI/">MixWILD</a></strong> - an interactive program to conduct multi-level modeling on longitudinal data. </li>
-                        <li><strong><a href= "https://github.com/rexli999/location_annotation_with_openstreetmap/tree/main">OSM-Based POI Labeling Package</a> </strong> - a Python package for automatically annotating GPS trajectories with semantic place labels using OpenStreetMap's hierarchical POI taxonomy. </li>
-                    </ul>
                 </div>
             </div>
 
@@ -220,6 +204,25 @@
                     <strong>AI tools:</strong> OpenAI API, LangChain, Hugging Face, Gemini, Claude, NotebookLM
                     
                 </div>
+            </div>
+
+            <h3 class="cv-section-title">Open-source contribution</h3>
+            <div class="cv-item">
+                <div class="cv-desc">
+                    <ul style="margin: 0; padding-left: 20px; color: #666;">
+                        <li><strong><a href= "https://reach-lab.github.io/MixWildGUI/">MixWILD</a></strong> - an interactive program to conduct multi-level modeling on longitudinal data. </li>
+                        <li><strong><a href= "https://github.com/rexli999/location_annotation_with_openstreetmap/tree/main">OSM-Based POI Labeling Package</a> </strong> - a Python package for automatically annotating GPS trajectories with semantic place labels using OpenStreetMap's hierarchical POI taxonomy. </li>
+                    </ul>
+                </div>
+            </div>
+
+            <h3 class="cv-section-title">Selected Awards</h3>
+            <div class="cv-item">
+                <div class="cv-row">
+                    <span class="cv-main-text">Distinguished Paper Award</span>
+                    <span class="cv-date">2023</span>
+                </div>
+                <div class="cv-sub-text">ACM UbiComp / ISWC 2023</div>
             </div>
         </main>
     </div>
